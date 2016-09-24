@@ -4,19 +4,19 @@ import XCTest
 class ItemTests: XCTestCase {
 
     func test_CanMakeFromJSON() {
-        let json = [
-            "id" : "ItemID",
+        let json: JSONDictionary = [
+            "id" : "item1",
             "type" : "text"
         ]
 
-        let item = Item(json: json)
-
         let expectedItem = Item(
-            id: "ItemID",
+            id: "item1",
             type: .text
         )
 
-        XCTAssertEqual(item, expectedItem)
+        let actualItem = Item(json: json)
+
+        XCTAssertEqual(actualItem, expectedItem)
     }
     
 }

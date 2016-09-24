@@ -1,30 +1,15 @@
 import Foundation
 
-typealias ItemIdentifier = String
-
-typealias JSONDictionary = [String:String]
-
 struct Item {
-    let id: ItemIdentifier
+    let id: Identifier
     let type: ItemType
 }
 
-extension Item {
-
-    init(json: JSONDictionary) {
-        guard
-            let id = json["id"],
-            let stringlyType = json["type"],
-            let type = ItemType(rawValue: stringlyType)
-            else { fatalError() }
-
-        self.id = id
-        self.type = type
-    }
-
+enum ItemType: String {
+    case text
 }
 
-// Mark - Equatable
+// MARK: - Equatable
 
 extension Item: Equatable {}
 
@@ -33,8 +18,21 @@ func ==(lhs: Item, rhs: Item) -> Bool {
         lhs.type == rhs.type
 }
 
+// MARK: - JSONConvertible
 
+extension Item: JSONConvertible {
 
-enum ItemType: String {
-    case text
+    init(json: JSONDictionary) {
+        guard
+            let id = json["id"] as? String,
+            let rawType = json["type"] as? String,
+            let type = ItemType(rawValue: rawType)
+            else { fatalError() }
+
+        self.id = id
+        self.type = type
+    }
+
 }
+
+
