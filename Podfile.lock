@@ -1,4 +1,9 @@
 PODS:
+  - FBSnapshotTestCase (2.1.3):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.3)
+  - FBSnapshotTestCase/Core (2.1.3)
+  - FBSnapshotTestCase/SwiftSupport (2.1.3):
+    - FBSnapshotTestCase/Core
   - Realm (1.1.0):
     - Realm/Headers (= 1.1.0)
   - Realm/Headers (1.1.0)
@@ -10,18 +15,20 @@ PODS:
     - RxSwift (~> 3.0.0-beta.1)
 
 DEPENDENCIES:
+  - FBSnapshotTestCase (~> 2.1.3)
   - RealmSwift (~> 1.1.0)
   - ResearchKit (~> 1.3.1)
   - RxSwift (= 3.0.0-beta.1)
   - RxTests (~> 3.0.0-beta.1)
 
 SPEC CHECKSUMS:
+  FBSnapshotTestCase: 4607968e0dfa1e2772ec0d0098354f8b870c5753
   Realm: ceecf1a4540c4ce9efe196fe73fa9855bce05bd8
   RealmSwift: 838058b2db95b12cb86bd0cf209df642c33fb60a
   ResearchKit: badba0340dd71d1cbab4789a0bf01b26022b8f94
   RxSwift: 0823e8d7969c23bfa9ddfb2afa4881e424a1a710
   RxTests: 819cbca750007349f03cfdb89bc07d412f67ab96
 
-PODFILE CHECKSUM: fec8fef86dbf80a237bf528467488c707ae6e48f
+PODFILE CHECKSUM: 49c12ffb14601fe8ef5179292d0a161fd9e95af0
 
 COCOAPODS: 1.0.1

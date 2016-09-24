@@ -13,7 +13,8 @@ target 'Mindset' do
 
   target 'MindsetTests' do
     inherit! :search_paths
-    pod 'RxTests',    '~> 3.0.0-beta.1'
+    pod 'RxTests', '~> 3.0.0-beta.1'
+    pod 'FBSnapshotTestCase', '~> 2.1.3'
   end
 
 end
