@@ -69,26 +69,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1A2C22CF1D9657D80051E9F6 /* Models */ = {
+		1A243FF91D926FA300978308 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1A2C22D91D965CA70051E9F6 /* StepTests.swift */,
-				1A2C22D01D9657F20051E9F6 /* ItemTests.swift */,
-				1A2C22DD1D9660EB0051E9F6 /* FormTests.swift */,
+				1A243FFA1D926FA300978308 /* Item.swift */,
 			);
-			name = Models;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		1A2C22D21D96588F0051E9F6 /* Models */ = {
+		1A243FFC1D926FC500978308 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1A2C22D31D9658B10051E9F6 /* Item.swift */,
-				1A2C22DB1D965D480051E9F6 /* Step.swift */,
-				1A2C22DF1D9669730051E9F6 /* Form.swift */,
-				1A2C22E51D966D510051E9F6 /* RecordEntry.swift */,
-				1A2C22E71D966DA20051E9F6 /* RecordResponse.swift */,
+				1A243FFE1D926FC500978308 /* ItemTests.swift */,
 			);
-			name = Models;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		1A6861CB1D8DBFF800FC9E3A = {
