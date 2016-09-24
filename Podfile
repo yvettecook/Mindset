@@ -14,7 +14,7 @@ target 'Mindset' do
   target 'MindsetTests' do
     inherit! :search_paths
     pod 'RxTests', '~> 3.0.0-beta.1'
-    pod 'FBSnapshotTestCase', '~> 2.1.3'
+#    pod 'FBSnapshotTestCase', '~> 2.1.3' Not yet working properly with Xcode 8/Swift 3
   end
 
 end
