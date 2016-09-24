@@ -14,9 +14,7 @@ class ItemTests: XCTestCase {
             type: .text
         )
 
-        let actualItem = Item(
-            json: json
-        )
+        let actualItem = Item(json: json)
 
         XCTAssertEqual(actualItem, expectedItem)
     }
