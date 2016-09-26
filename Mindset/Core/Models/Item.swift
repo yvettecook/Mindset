@@ -7,6 +7,7 @@ struct Item {
 
 enum ItemType: String {
     case text
+    case scale
 }
 
 // MARK: - Equatable
