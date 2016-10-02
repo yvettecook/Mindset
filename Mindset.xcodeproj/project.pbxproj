@@ -115,6 +115,15 @@
 			name = Form;
 			sourceTree = "<group>";
 		};
+		1A10326E1DA168F0008963DB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1A2C23041D9994330051E9F6 /* HomeViewController.swift */,
+				1A2C23061D9994560051E9F6 /* HomeView.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
 		1A243FF91D926FA300978308 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,8 +200,7 @@
 			children = (
 				1A6861FC1D8DC16E00FC9E3A /* Resources */,
 				1A6861FE1D8DC16E00FC9E3A /* SupportingFiles */,
-				1A2C23041D9994330051E9F6 /* HomeViewController.swift */,
-				1A2C23061D9994560051E9F6 /* HomeView.swift */,
+				1A10326E1DA168F0008963DB /* Home */,
 				1A1032641DA120D7008963DB /* AppNavigator.swift */,
 			);
 			path = Mobile;
