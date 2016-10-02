@@ -32,4 +32,3 @@ class HomeViewController: UIViewController {
         navigationItem.setRightBarButton(newFormButton, animated: false)
     }
 }
-

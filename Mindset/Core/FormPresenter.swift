@@ -1,14 +1,21 @@
 import Foundation
 
 class FormPresenter {
+
     let displayer: FormDisplayer
-    let database: FormDatabase
+    let service: FormService
     let layoutGenerator: FormLayoutGenerator
 
-    init(displayer: FormDisplayer, database: FormDatabase, layoutGenerator: FormLayoutGenerator) {
+    let navigator: Navigator
+
+    init(displayer: FormDisplayer,
+         service: FormService,
+         layoutGenerator: FormLayoutGenerator,
+         navigator: Navigator) {
         self.displayer = displayer
-        self.database = database
+        self.service = service
         self.layoutGenerator = layoutGenerator
+        self.navigator = navigator
     }
 
 
@@ -20,9 +27,16 @@ class FormPresenter {
     func stopPresenting() {}
 
     func getDisplayableForm() -> DisplayableForm {
-        let form = database.form(ofType: .thoughtRecord)
+        let form = service.newCBTForm()
         return layoutGenerator.prepareForDisplay(form: form)
     }
+}
+
+extension FormPresenter: FormActionListener {
+    func userDidSaveResponse() {}
+    func userDidDiscardResponse() {}
+    func userDidCompleteResponse() {}
+    func userDidFailedResponse() {}
 }
 
 protocol FormLayoutGenerator {
@@ -30,3 +44,4 @@ protocol FormLayoutGenerator {
 }
 
 protocol DisplayableForm {}
+

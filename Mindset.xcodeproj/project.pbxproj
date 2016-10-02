@@ -12,6 +12,9 @@
 		1A1032621DA11CFE008963DB /* FormService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1032611DA11CFE008963DB /* FormService.swift */; };
 		1A1032651DA120D7008963DB /* AppNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1032641DA120D7008963DB /* AppNavigator.swift */; };
 		1A1032671DA120F9008963DB /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1032661DA120F9008963DB /* Navigator.swift */; };
+		1A1032691DA146E2008963DB /* SharedServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1032681DA146E2008963DB /* SharedServices.swift */; };
+		1A10326B1DA14740008963DB /* LocalFormService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A10326A1DA14740008963DB /* LocalFormService.swift */; };
+		1A10326D1DA14E78008963DB /* ResearchKitFormLayoutGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A10326C1DA14E78008963DB /* ResearchKitFormLayoutGenerator.swift */; };
 		1A243FFB1D926FA300978308 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A243FFA1D926FA300978308 /* Item.swift */; };
 		1A2440011D926FC500978308 /* ItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A243FFE1D926FC500978308 /* ItemTests.swift */; };
 		1A2C22ED1D9689770051E9F6 /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2C22E91D9689770051E9F6 /* Form.swift */; };
@@ -53,6 +56,9 @@
 		1A1032611DA11CFE008963DB /* FormService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormService.swift; sourceTree = "<group>"; };
 		1A1032641DA120D7008963DB /* AppNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNavigator.swift; sourceTree = "<group>"; };
 		1A1032661DA120F9008963DB /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		1A1032681DA146E2008963DB /* SharedServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedServices.swift; sourceTree = "<group>"; };
+		1A10326A1DA14740008963DB /* LocalFormService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalFormService.swift; sourceTree = "<group>"; };
+		1A10326C1DA14E78008963DB /* ResearchKitFormLayoutGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResearchKitFormLayoutGenerator.swift; sourceTree = "<group>"; };
 		1A243FFA1D926FA300978308 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		1A243FFE1D926FC500978308 /* ItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTests.swift; sourceTree = "<group>"; };
 		1A2C22E91D9689770051E9F6 /* Form.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Form.swift; path = Models/Form.swift; sourceTree = "<group>"; };
@@ -201,6 +207,8 @@
 				1A6861FC1D8DC16E00FC9E3A /* Resources */,
 				1A6861FE1D8DC16E00FC9E3A /* SupportingFiles */,
 				1A10326E1DA168F0008963DB /* Home */,
+				1A10326A1DA14740008963DB /* LocalFormService.swift */,
+				1A10326C1DA14E78008963DB /* ResearchKitFormLayoutGenerator.swift */,
 				1A1032641DA120D7008963DB /* AppNavigator.swift */,
 			);
 			path = Mobile;
@@ -221,6 +229,7 @@
 				1A6861FF1D8DC16E00FC9E3A /* AppDelegate.swift */,
 				1A6862001D8DC16E00FC9E3A /* LaunchScreen.storyboard */,
 				1A6862021D8DC16E00FC9E3A /* Info.plist */,
+				1A1032681DA146E2008963DB /* SharedServices.swift */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -460,11 +469,14 @@
 				1A1032621DA11CFE008963DB /* FormService.swift in Sources */,
 				1A2C22EF1D9689770051E9F6 /* RecordResponse.swift in Sources */,
 				1A6862041D8DC16E00FC9E3A /* AppDelegate.swift in Sources */,
+				1A1032691DA146E2008963DB /* SharedServices.swift in Sources */,
 				1A1032651DA120D7008963DB /* AppNavigator.swift in Sources */,
 				1A2C23071D9994560051E9F6 /* HomeView.swift in Sources */,
 				1A2C23051D9994330051E9F6 /* HomeViewController.swift in Sources */,
 				1A2C22ED1D9689770051E9F6 /* Form.swift in Sources */,
+				1A10326D1DA14E78008963DB /* ResearchKitFormLayoutGenerator.swift in Sources */,
 				1A2C22FF1D9980170051E9F6 /* FormDatabase.swift in Sources */,
+				1A10326B1DA14740008963DB /* LocalFormService.swift in Sources */,
 				1A2C22F01D9689770051E9F6 /* Step.swift in Sources */,
 				1A2C23011D99881D0051E9F6 /* FormPresenter.swift in Sources */,
 			);
