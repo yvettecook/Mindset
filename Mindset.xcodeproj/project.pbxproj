@@ -130,6 +130,13 @@
 			name = Home;
 			sourceTree = "<group>";
 		};
+		1A1032711DA17061008963DB /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
 		1A243FF91D926FA300978308 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +217,7 @@
 				1A10326A1DA14740008963DB /* LocalFormService.swift */,
 				1A10326C1DA14E78008963DB /* ResearchKitFormLayoutGenerator.swift */,
 				1A1032641DA120D7008963DB /* AppNavigator.swift */,
+				1A1032711DA17061008963DB /* Utilities */,
 			);
 			path = Mobile;
 			sourceTree = "<group>";

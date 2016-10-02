@@ -19,9 +19,11 @@ final class AppNavigator: NSObject, Navigator {
             navigator: self
         )
 
-        let displayableForm = presenter.getDisplayableForm() as? ORKOrderedTask
+        guard
+            let displayableForm = presenter.getDisplayableForm() as? ResearchKitForm
+            else { fatalError("Cannot display this form") }
 
-        let taskVC = ORKTaskViewController(task: displayableForm, taskRun: nil)
+        let taskVC = ORKTaskViewController(task: displayableForm.orkTask, taskRun: nil)
         taskVC.delegate = self
         navigationController.pushViewController(taskVC, animated: true)
     }

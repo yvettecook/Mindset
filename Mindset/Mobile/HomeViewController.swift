@@ -4,7 +4,6 @@ class HomeViewController: UIViewController {
 
     let homeView = HomeView()
 
-
     static func withDependencies() -> HomeViewController {
         return HomeViewController()
     }
@@ -19,9 +18,13 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupLayout()
         styleNavigationBar()
     }
 
+    private func setupLayout() {
+        view.addSubview(homeView)
+}
 
     func styleNavigationBar() {
         addBarButtonItem()
@@ -32,3 +35,4 @@ class HomeViewController: UIViewController {
         navigationItem.setRightBarButton(newFormButton, animated: false)
     }
 }
+
