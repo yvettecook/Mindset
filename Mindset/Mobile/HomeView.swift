@@ -2,7 +2,6 @@ import UIKit
 
 final class HomeView: UIView {
 
-    weak var actionListener: FormActionListener?
 
     let newRecordBarButtonItem = UIBarButtonItem(barButtonSystemItem: .compose, target: nil, action: nil)
 
@@ -42,16 +41,8 @@ final class HomeView: UIView {
     }
 
     @objc private func newRecord() {
-
+        SharedServices.navigator.toNewResponse()
     }
-    
 }
 
-extension HomeView: FormDisplayer {
-    func display(form: DisplayableForm) {}
-
-    // TODO: Should this be part of the protocol?
-    func attach(actionListener: FormActionListener) {}
-    func detach(actionListener: FormActionListener) {}
-}
 

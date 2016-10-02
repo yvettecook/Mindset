@@ -4,6 +4,11 @@ class HomeViewController: UIViewController {
 
     let homeView = HomeView()
 
+
+    static func withDependencies() -> HomeViewController {
+        return HomeViewController()
+    }
+
     init() {
         super.init(nibName: nil, bundle: nil)
     }

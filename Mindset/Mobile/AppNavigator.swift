@@ -6,6 +6,7 @@ final class AppNavigator: Navigator {
 
     func toHome() {
         let homeViewController = HomeViewController()
+        let homeViewController = HomeViewController.withDependencies()
         navigationController.setViewControllers([homeViewController], animated: true)
 
     }
