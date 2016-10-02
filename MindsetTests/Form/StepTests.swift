@@ -35,10 +35,7 @@ extension Step {
             title: "Step Title",
             prompt: "Step Prompt",
             items: [
-                Item(
-                    id: "item1",
-                    type: .text
-                )
+                Item.mock()
             ]
         )
     }

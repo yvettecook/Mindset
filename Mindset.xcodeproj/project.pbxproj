@@ -28,6 +28,9 @@
 		1A1032A01DA1792D008963DB /* ItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A10329C1DA1792D008963DB /* ItemTests.swift */; };
 		1A1032A11DA1792D008963DB /* StepTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A10329D1DA1792D008963DB /* StepTests.swift */; };
 		1A1032A21DA1792D008963DB /* ThoughtRecordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A10329E1DA1792D008963DB /* ThoughtRecordTests.swift */; };
+		1A1032A41DA18149008963DB /* RecordToORKConverters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1032A31DA18149008963DB /* RecordToORKConverters.swift */; };
+		1A1032AA1DA181DB008963DB /* ORKFormItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1032A91DA181DB008963DB /* ORKFormItemTests.swift */; };
+		1A1032AC1DA19E9E008963DB /* ORKFormStepTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1032AB1DA19E9E008963DB /* ORKFormStepTests.swift */; };
 		1A2C22F61D9689D90051E9F6 /* ConvenienceStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2C22F51D9689D90051E9F6 /* ConvenienceStuff.swift */; };
 		1A2C22FA1D969A9E0051E9F6 /* thought-record.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A2C22F91D969A9E0051E9F6 /* thought-record.json */; };
 		1A2C22FB1D969EF80051E9F6 /* thought-record.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A2C22F91D969A9E0051E9F6 /* thought-record.json */; };
@@ -72,6 +75,9 @@
 		1A10329C1DA1792D008963DB /* ItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTests.swift; sourceTree = "<group>"; };
 		1A10329D1DA1792D008963DB /* StepTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepTests.swift; sourceTree = "<group>"; };
 		1A10329E1DA1792D008963DB /* ThoughtRecordTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThoughtRecordTests.swift; sourceTree = "<group>"; };
+		1A1032A31DA18149008963DB /* RecordToORKConverters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordToORKConverters.swift; sourceTree = "<group>"; };
+		1A1032A91DA181DB008963DB /* ORKFormItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ORKFormItemTests.swift; path = ORKConverters/ORKFormItemTests.swift; sourceTree = "<group>"; };
+		1A1032AB1DA19E9E008963DB /* ORKFormStepTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ORKFormStepTests.swift; path = ORKConverters/ORKFormStepTests.swift; sourceTree = "<group>"; };
 		1A2C22F51D9689D90051E9F6 /* ConvenienceStuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvenienceStuff.swift; sourceTree = "<group>"; };
 		1A2C22F91D969A9E0051E9F6 /* thought-record.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "thought-record.json"; sourceTree = "<group>"; };
 		1A6861D41D8DBFF800FC9E3A /* Mindset.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mindset.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +151,7 @@
 			children = (
 				1A10328E1DA17904008963DB /* LocalFormService.swift */,
 				1A10328F1DA17904008963DB /* ResearchKitFormLayoutGenerator.swift */,
+				1A1032A31DA18149008963DB /* RecordToORKConverters.swift */,
 			);
 			path = Form;
 			sourceTree = "<group>";
@@ -175,6 +182,15 @@
 				1A10329E1DA1792D008963DB /* ThoughtRecordTests.swift */,
 			);
 			path = Form;
+			sourceTree = "<group>";
+		};
+		1A1032A71DA18184008963DB /* ORKConverters */ = {
+			isa = PBXGroup;
+			children = (
+				1A1032A91DA181DB008963DB /* ORKFormItemTests.swift */,
+				1A1032AB1DA19E9E008963DB /* ORKFormStepTests.swift */,
+			);
+			name = ORKConverters;
 			sourceTree = "<group>";
 		};
 		1A6861CB1D8DBFF800FC9E3A = {
@@ -209,6 +225,7 @@
 		1A6861EB1D8DBFF800FC9E3A /* MindsetTests */ = {
 			isa = PBXGroup;
 			children = (
+				1A1032A71DA18184008963DB /* ORKConverters */,
 				1A10329A1DA1792D008963DB /* Form */,
 				1A6861EE1D8DBFF800FC9E3A /* Info.plist */,
 			);
@@ -491,6 +508,7 @@
 				1A1032991DA17904008963DB /* AppNavigator.swift in Sources */,
 				1A1032851DA178A5008963DB /* Form.swift in Sources */,
 				1A1032981DA17904008963DB /* HomeViewController.swift in Sources */,
+				1A1032A41DA18149008963DB /* RecordToORKConverters.swift in Sources */,
 				1A1032971DA17904008963DB /* HomeView.swift in Sources */,
 				1A1032671DA120F9008963DB /* Navigator.swift in Sources */,
 				1A1032861DA178A5008963DB /* Item.swift in Sources */,
@@ -510,7 +528,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A1032AC1DA19E9E008963DB /* ORKFormStepTests.swift in Sources */,
 				1A1032A21DA1792D008963DB /* ThoughtRecordTests.swift in Sources */,
+				1A1032AA1DA181DB008963DB /* ORKFormItemTests.swift in Sources */,
 				1A1032A11DA1792D008963DB /* StepTests.swift in Sources */,
 				1A1032A01DA1792D008963DB /* ItemTests.swift in Sources */,
 				1A10329F1DA1792D008963DB /* FormTests.swift in Sources */,
