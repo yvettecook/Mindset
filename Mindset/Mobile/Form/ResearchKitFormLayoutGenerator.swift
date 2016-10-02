@@ -5,8 +5,6 @@ struct ResearchKitFormGenerator: FormLayoutGenerator {
     func prepareForDisplay(form: Form) -> DisplayableForm {
         return ResearchKitForm(form: form)
     }
-
-
 }
 
 class ResearchKitForm: DisplayableForm {
