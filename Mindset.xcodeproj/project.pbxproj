@@ -31,6 +31,7 @@
 		1A1032A41DA18149008963DB /* RecordToORKConverters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1032A31DA18149008963DB /* RecordToORKConverters.swift */; };
 		1A1032AA1DA181DB008963DB /* ORKFormItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1032A91DA181DB008963DB /* ORKFormItemTests.swift */; };
 		1A1032AC1DA19E9E008963DB /* ORKFormStepTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1032AB1DA19E9E008963DB /* ORKFormStepTests.swift */; };
+		1A1032AE1DA387BE008963DB /* ORKFormTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1032AD1DA387BE008963DB /* ORKFormTaskTests.swift */; };
 		1A2C22F61D9689D90051E9F6 /* ConvenienceStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2C22F51D9689D90051E9F6 /* ConvenienceStuff.swift */; };
 		1A2C22FA1D969A9E0051E9F6 /* thought-record.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A2C22F91D969A9E0051E9F6 /* thought-record.json */; };
 		1A2C22FB1D969EF80051E9F6 /* thought-record.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A2C22F91D969A9E0051E9F6 /* thought-record.json */; };
@@ -78,6 +79,7 @@
 		1A1032A31DA18149008963DB /* RecordToORKConverters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordToORKConverters.swift; sourceTree = "<group>"; };
 		1A1032A91DA181DB008963DB /* ORKFormItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ORKFormItemTests.swift; path = ORKConverters/ORKFormItemTests.swift; sourceTree = "<group>"; };
 		1A1032AB1DA19E9E008963DB /* ORKFormStepTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ORKFormStepTests.swift; path = ORKConverters/ORKFormStepTests.swift; sourceTree = "<group>"; };
+		1A1032AD1DA387BE008963DB /* ORKFormTaskTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ORKFormTaskTests.swift; path = ORKConverters/ORKFormTaskTests.swift; sourceTree = "<group>"; };
 		1A2C22F51D9689D90051E9F6 /* ConvenienceStuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvenienceStuff.swift; sourceTree = "<group>"; };
 		1A2C22F91D969A9E0051E9F6 /* thought-record.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "thought-record.json"; sourceTree = "<group>"; };
 		1A6861D41D8DBFF800FC9E3A /* Mindset.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mindset.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,6 +191,7 @@
 			children = (
 				1A1032A91DA181DB008963DB /* ORKFormItemTests.swift */,
 				1A1032AB1DA19E9E008963DB /* ORKFormStepTests.swift */,
+				1A1032AD1DA387BE008963DB /* ORKFormTaskTests.swift */,
 			);
 			name = ORKConverters;
 			sourceTree = "<group>";
@@ -529,6 +532,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A1032AC1DA19E9E008963DB /* ORKFormStepTests.swift in Sources */,
+				1A1032AE1DA387BE008963DB /* ORKFormTaskTests.swift in Sources */,
 				1A1032A21DA1792D008963DB /* ThoughtRecordTests.swift in Sources */,
 				1A1032AA1DA181DB008963DB /* ORKFormItemTests.swift in Sources */,
 				1A1032A11DA1792D008963DB /* StepTests.swift in Sources */,

@@ -5,14 +5,34 @@ import ResearchKit
 class ORKFormStepsTests: XCTestCase {
 
     func test_CanConvertStepToORKFormStep() {
-        let step = Step.mock()
+        let step = Step.example()
         let orkStep = stepToORKFormStep(step: step)
 
-        let expectedORKStep = ORKFormStep(identifier: "1", title: "Step Title", text: "Step Prompt")
-        expectedORKStep.formItems = [ORKFormItem(identifier: "item1", text: "", answerFormat: ORKTextAnswerFormat())]
+        let expectedORKStep = ORKStep.example()
 
         XCTAssertEqual(orkStep, expectedORKStep)
     }
 
+}
+
+
+extension ORKStep {
+
+    static func example() -> ORKStep {
+        let step = ORKFormStep(
+            identifier: "1",
+            title: "Step Title",
+            text: "Step Prompt"
+        )
+
+        step.formItems = [
+            ORKFormItem(
+                identifier: "item1",
+                text: "",
+                answerFormat: ORKTextAnswerFormat())
+        ]
+
+        return step
+    }
 
 }

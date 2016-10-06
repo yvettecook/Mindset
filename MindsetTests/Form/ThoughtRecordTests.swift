@@ -15,7 +15,7 @@ class ThoughtRecordTests: XCTestCase {
 
         let actualForm = Form(json: json)
 
-        let expectedForm = Form.mockThoughtRecord()
+        let expectedForm = Form.exampleThoughtRecord()
 
         XCTAssertEqual(actualForm, expectedForm)
     }
@@ -24,7 +24,7 @@ class ThoughtRecordTests: XCTestCase {
 
 extension Form {
 
-    static func mockThoughtRecord() -> Form {
+    static func exampleThoughtRecord() -> Form {
         return Form(id: "ThoughtRecord1.0", name: "Thought Record", steps: [
             Step(
                 id: "step1",

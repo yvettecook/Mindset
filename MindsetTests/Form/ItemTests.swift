@@ -9,7 +9,7 @@ class ItemTests: XCTestCase {
             "type" : "text"
         ]
 
-        let expectedItem = Item.mock()
+        let expectedItem = Item.example()
         let actualItem = Item(json: json)
 
         XCTAssertEqual(actualItem, expectedItem)
@@ -19,7 +19,7 @@ class ItemTests: XCTestCase {
 
 extension Item {
 
-    static func mock(type: ItemType = .text) -> Item {
+    static func example(type: ItemType = .text) -> Item {
         return Item(
             id: "item1",
             type: type

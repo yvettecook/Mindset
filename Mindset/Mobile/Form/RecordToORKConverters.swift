@@ -1,11 +1,11 @@
 import ResearchKit
 
-func recordToORKOrderedTask(form: Form) -> ORKOrderedTask {
+func formToORKOrderedTask(form: Form) -> ORKOrderedTask {
 
     var steps = [ORKStep]()
 
     let introStep = ORKInstructionStep(identifier: "intro")
-    introStep.title = "Thought Record"
+    introStep.title = form.name
 
     steps.append(introStep)
 
@@ -14,7 +14,7 @@ func recordToORKOrderedTask(form: Form) -> ORKOrderedTask {
     }
 
     let summaryStep = ORKCompletionStep(identifier: "SummaryStep")
-    summaryStep.title = "Record Completed"
+    summaryStep.title = "Completed"
 
     steps.append(summaryStep)
 

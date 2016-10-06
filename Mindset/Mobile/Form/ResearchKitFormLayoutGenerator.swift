@@ -12,7 +12,7 @@ class ResearchKitForm: DisplayableForm {
     let orkTask: ORKOrderedTask
 
     init(form: Form) {
-        self.orkTask = recordToORKOrderedTask(form: form)
+        self.orkTask = formToORKOrderedTask(form: form)
     }
     
     required init(coder aDecoder: NSCoder) {
