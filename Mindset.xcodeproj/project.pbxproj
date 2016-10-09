@@ -39,6 +39,7 @@
 		1A6862041D8DC16E00FC9E3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6861FF1D8DC16E00FC9E3A /* AppDelegate.swift */; };
 		1A6862051D8DC16E00FC9E3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A6862001D8DC16E00FC9E3A /* LaunchScreen.storyboard */; };
 		1A6862061D8DC16E00FC9E3A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A6862021D8DC16E00FC9E3A /* Info.plist */; };
+		1A9110D51DAABB9D004B35F7 /* RecordDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9110D41DAABB9D004B35F7 /* RecordDatabase.swift */; };
 		34E8635FEA3F1BA4891C919F /* Pods_MindsetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6826EAF2163B8AE7838AA650 /* Pods_MindsetTests.framework */; };
 		C70681F80D88FC1E8B70FAA9 /* Pods_Mindset.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5BD14FB242A8A704C4D4A32 /* Pods_Mindset.framework */; };
 /* End PBXBuildFile section */
@@ -89,6 +90,7 @@
 		1A6861FF1D8DC16E00FC9E3A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A6862011D8DC16E00FC9E3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A6862021D8DC16E00FC9E3A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A9110D41DAABB9D004B35F7 /* RecordDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordDatabase.swift; sourceTree = "<group>"; };
 		519BFAD084CC7D56668B0243 /* Pods-Mindset.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mindset.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mindset/Pods-Mindset.release.xcconfig"; sourceTree = "<group>"; };
 		6826EAF2163B8AE7838AA650 /* Pods_MindsetTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MindsetTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81DFB4CF1B056CCFE241A2A9 /* Pods-Mindset.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mindset.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mindset/Pods-Mindset.debug.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			children = (
 				1A1032891DA178BF008963DB /* RecordEntry.swift */,
 				1A10328A1DA178BF008963DB /* RecordResponse.swift */,
+				1A9110D41DAABB9D004B35F7 /* RecordDatabase.swift */,
 			);
 			path = Record;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 		1A6861FB1D8DC16E00FC9E3A /* Mobile */ = {
 			isa = PBXGroup;
 			children = (
+				1A9110D31DAAB8CA004B35F7 /* RealmDB */,
 				1A10328D1DA17904008963DB /* Form */,
 				1A1032901DA17904008963DB /* Home */,
 				1A1032931DA17904008963DB /* Navigator */,
@@ -276,6 +280,13 @@
 				1A1032681DA146E2008963DB /* SharedServices.swift */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		1A9110D31DAAB8CA004B35F7 /* RealmDB */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RealmDB;
 			sourceTree = "<group>";
 		};
 		7A7A2F893F7C4E44C5A3B9D0 /* Frameworks */ = {
@@ -509,6 +520,7 @@
 				1A10328C1DA178BF008963DB /* RecordResponse.swift in Sources */,
 				1A1032871DA178A5008963DB /* Step.swift in Sources */,
 				1A1032991DA17904008963DB /* AppNavigator.swift in Sources */,
+				1A9110D51DAABB9D004B35F7 /* RecordDatabase.swift in Sources */,
 				1A1032851DA178A5008963DB /* Form.swift in Sources */,
 				1A1032981DA17904008963DB /* HomeViewController.swift in Sources */,
 				1A1032A41DA18149008963DB /* RecordToORKConverters.swift in Sources */,
