@@ -4,9 +4,9 @@ import XCTest
 class StepTests: XCTestCase {
 
     func test_CanMakeFromJSON() {
-        let json = Step.mockJSON()
+        let json = Step.exampleJSON()
 
-        let expectedStep = Step.mock()
+        let expectedStep = Step.example()
         let actualStep = Step(json: json)
 
         XCTAssertEqual(actualStep, expectedStep)
@@ -15,7 +15,7 @@ class StepTests: XCTestCase {
 }
 
 extension Step {
-    static func mockJSON() -> JSONDictionary {
+    static func exampleJSON() -> JSONDictionary {
         return [
             "id" : "1",
             "title" : "Step Title",
@@ -29,16 +29,13 @@ extension Step {
         ]
     }
 
-    static func mock() -> Step {
+    static func example() -> Step {
         return Step(
             id: "1",
             title: "Step Title",
             prompt: "Step Prompt",
             items: [
-                Item(
-                    id: "item1",
-                    type: .text
-                )
+                Item.example()
             ]
         )
     }

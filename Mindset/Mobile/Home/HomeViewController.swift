@@ -1,0 +1,38 @@
+import UIKit
+
+class HomeViewController: UIViewController {
+
+    let homeView = HomeView()
+
+    static func withDependencies() -> HomeViewController {
+        return HomeViewController()
+    }
+
+    init() {
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupLayout()
+        styleNavigationBar()
+    }
+
+    private func setupLayout() {
+        view.addSubview(homeView)
+}
+
+    func styleNavigationBar() {
+        addBarButtonItem()
+    }
+
+    func addBarButtonItem() {
+        let newFormButton = homeView.newRecordBarButtonItem
+        navigationItem.setRightBarButton(newFormButton, animated: false)
+    }
+}
+
