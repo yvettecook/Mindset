@@ -8,7 +8,7 @@ target 'Mindset' do
   # Pods for Mindset
 
   pod 'ResearchKit', '~> 1.3.1'
-  pod 'RealmSwift', '~> 1.1.0'
+  pod 'RealmSwift', '~> 2.0.2'
   pod 'RxSwift', '3.0.0-beta.1'
 
   target 'MindsetTests' do

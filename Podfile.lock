@@ -1,27 +1,27 @@
 PODS:
-  - Realm (1.1.0):
-    - Realm/Headers (= 1.1.0)
-  - Realm/Headers (1.1.0)
-  - RealmSwift (1.1.0):
-    - Realm (= 1.1.0)
+  - Realm (2.0.2):
+    - Realm/Headers (= 2.0.2)
+  - Realm/Headers (2.0.2)
+  - RealmSwift (2.0.2):
+    - Realm (= 2.0.2)
   - ResearchKit (1.3.1)
   - RxSwift (3.0.0-beta.1)
   - RxTests (3.0.0-beta.1):
     - RxSwift (~> 3.0.0-beta.1)
 
 DEPENDENCIES:
-  - RealmSwift (~> 1.1.0)
+  - RealmSwift (~> 2.0.2)
   - ResearchKit (~> 1.3.1)
   - RxSwift (= 3.0.0-beta.1)
   - RxTests (~> 3.0.0-beta.1)
 
 SPEC CHECKSUMS:
-  Realm: ceecf1a4540c4ce9efe196fe73fa9855bce05bd8
-  RealmSwift: 838058b2db95b12cb86bd0cf209df642c33fb60a
+  Realm: 0f5a194af0b7e6158b83db41b4ee1a00be7ddf1a
+  RealmSwift: 0eb5070d851cba7c66e841ca756d83609dc78bc8
   ResearchKit: badba0340dd71d1cbab4789a0bf01b26022b8f94
   RxSwift: 0823e8d7969c23bfa9ddfb2afa4881e424a1a710
   RxTests: 819cbca750007349f03cfdb89bc07d412f67ab96
 
-PODFILE CHECKSUM: 1720c354e95536a62aefde3382aae6e09c820c63
+PODFILE CHECKSUM: f67c115acec220d20a6c7a24df75bc83853728a2
 
 COCOAPODS: 1.0.1
