@@ -39,6 +39,8 @@
 		1A6862041D8DC16E00FC9E3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6861FF1D8DC16E00FC9E3A /* AppDelegate.swift */; };
 		1A6862051D8DC16E00FC9E3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A6862001D8DC16E00FC9E3A /* LaunchScreen.storyboard */; };
 		1A6862061D8DC16E00FC9E3A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A6862021D8DC16E00FC9E3A /* Info.plist */; };
+		1A75B5101DAF6019002E453D /* RealmRecordEntryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A75B50F1DAF6019002E453D /* RealmRecordEntryTests.swift */; };
+		1A75B5121DAF6118002E453D /* RealmRecordResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A75B5111DAF6118002E453D /* RealmRecordResponseTests.swift */; };
 		1A9110D51DAABB9D004B35F7 /* RecordDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9110D41DAABB9D004B35F7 /* RecordDatabase.swift */; };
 		1A9110D71DAABC86004B35F7 /* RealmRecordDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9110D61DAABC86004B35F7 /* RealmRecordDatabase.swift */; };
 		1A9110D91DAAC013004B35F7 /* RealmRecordConverters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9110D81DAAC013004B35F7 /* RealmRecordConverters.swift */; };
@@ -95,6 +97,8 @@
 		1A6861FF1D8DC16E00FC9E3A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A6862011D8DC16E00FC9E3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A6862021D8DC16E00FC9E3A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A75B50F1DAF6019002E453D /* RealmRecordEntryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmRecordEntryTests.swift; sourceTree = "<group>"; };
+		1A75B5111DAF6118002E453D /* RealmRecordResponseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmRecordResponseTests.swift; sourceTree = "<group>"; };
 		1A9110D41DAABB9D004B35F7 /* RecordDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordDatabase.swift; sourceTree = "<group>"; };
 		1A9110D61DAABC86004B35F7 /* RealmRecordDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmRecordDatabase.swift; sourceTree = "<group>"; };
 		1A9110D81DAAC013004B35F7 /* RealmRecordConverters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmRecordConverters.swift; sourceTree = "<group>"; };
@@ -308,6 +312,8 @@
 			isa = PBXGroup;
 			children = (
 				1AB8D8941DABB10D003C4EE8 /* RealmConvertToRecordEntryTests.swift */,
+				1A75B50F1DAF6019002E453D /* RealmRecordEntryTests.swift */,
+				1A75B5111DAF6118002E453D /* RealmRecordResponseTests.swift */,
 			);
 			path = RealmConverters;
 			sourceTree = "<group>";
@@ -575,9 +581,11 @@
 				1A1032AE1DA387BE008963DB /* ORKFormTaskTests.swift in Sources */,
 				1A1032A21DA1792D008963DB /* ThoughtRecordTests.swift in Sources */,
 				1A1032AA1DA181DB008963DB /* ORKFormItemTests.swift in Sources */,
+				1A75B5121DAF6118002E453D /* RealmRecordResponseTests.swift in Sources */,
 				1A1032A11DA1792D008963DB /* StepTests.swift in Sources */,
 				1A1032A01DA1792D008963DB /* ItemTests.swift in Sources */,
 				1A10329F1DA1792D008963DB /* FormTests.swift in Sources */,
+				1A75B5101DAF6019002E453D /* RealmRecordEntryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
