@@ -1,4 +1,6 @@
 import UIKit
+import Realm
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -12,6 +14,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
+
+        let realm = try! Realm()
+
+        let realmRecords = realm.objects(RealmRecordEntry.self)
+        print("**********")
+        print(realmRecords)
+        print("**********")
 
         return true
     }

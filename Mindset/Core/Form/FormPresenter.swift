@@ -3,17 +3,20 @@ import Foundation
 class FormPresenter {
 
     let displayer: FormDisplayer
-    let service: FormService
+    let formService: FormService
+    let recordService: RecordService
     let layoutGenerator: FormLayoutGenerator
 
     let navigator: Navigator
 
     init(displayer: FormDisplayer,
-         service: FormService,
+         formService: FormService,
+         recordService: RecordService,
          layoutGenerator: FormLayoutGenerator,
          navigator: Navigator) {
         self.displayer = displayer
-        self.service = service
+        self.formService = formService
+        self.recordService = recordService
         self.layoutGenerator = layoutGenerator
         self.navigator = navigator
     }
@@ -27,16 +30,27 @@ class FormPresenter {
     func stopPresenting() {}
 
     func getDisplayableForm() -> DisplayableForm {
-        let form = service.newCBTForm()
+        let form = formService.newCBTForm()
         return layoutGenerator.prepareForDisplay(form: form)
     }
 }
 
-extension FormPresenter: FormActionListener {
-    func userDidSaveResponse() {}
-    func userDidDiscardResponse() {}
-    func userDidCompleteResponse() {}
-    func userDidFailedResponse() {}
+extension FormPresenter: RecordActionListener {
+    func userDidSave(record: RecordEntry) {
+        recordService.save(record: record)
+    }
+
+    func userDidDiscardRecord() {
+        recordService.discardRecord()
+    }
+
+    func userDidComplete(record: RecordEntry) {
+        recordService.complete(record: record)
+    }
+
+    func userDidFailedRecord() {
+        recordService.failedRecord()
+    }
 }
 
 protocol FormLayoutGenerator {

@@ -11,10 +11,11 @@ final class AppNavigator: NSObject, Navigator {
         navigationController.setViewControllers([homeViewController], animated: true)
     }
 
-    func toNewResponse() {
+    func toNewRecord() {
         let presenter = FormPresenter(
             displayer: self,
-            service: LocalFormService(),
+            formService: LocalFormService(),
+            recordService: PersistedRecordService(recordDatabase: RealmRecordDatabase()),
             layoutGenerator: ResearchKitFormGenerator(),
             navigator: self
         )
@@ -25,8 +26,12 @@ final class AppNavigator: NSObject, Navigator {
 
         let taskVC = ORKTaskViewController(task: displayableForm.orkTask, taskRun: nil)
         taskVC.delegate = self
-        navigationController.pushViewController(taskVC, animated: true)
+        navigationController.present(taskVC, animated: true)
+
+        self.presenter = presenter
     }
+
+    var presenter: FormPresenter?
 
 }
 
@@ -36,6 +41,26 @@ extension AppNavigator: FormDisplayer {
 
 extension AppNavigator: ORKTaskViewControllerDelegate {
 
-    public func taskViewController(_ taskViewController: ORKTaskViewController, didFinishWith reason: ORKTaskViewControllerFinishReason, error: Error?) {}
+    public func taskViewController(_ taskViewController: ORKTaskViewController,
+                                   didFinishWith reason: ORKTaskViewControllerFinishReason,
+                                   error: Error?) {
+        guard let presenter = presenter else { fatalError() }
+        switch reason {
+        case .saved:
+            let taskResult = taskViewController.result
+            let record = orkTaskResultToRecord(task: taskResult)
+            presenter.userDidSave(record: record)
+        case .discarded:
+            presenter.userDidDiscardRecord()
+        case.completed:
+            let taskResult = taskViewController.result
+            let record = orkTaskResultToRecord(task: taskResult)
+            presenter.userDidComplete(record: record)
+        case .failed:
+            presenter.userDidFailedRecord()
+        }
+
+        navigationController.dismiss(animated: true, completion: nil)
+    }
 
 }

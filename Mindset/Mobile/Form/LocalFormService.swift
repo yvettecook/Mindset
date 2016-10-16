@@ -10,9 +10,4 @@ struct LocalFormService: FormService {
 
         return Form(json: json)
     }
-
-    func saveResponse() {}
-    func discardResponse() {}
-    func completeResponse() {}
-    func failedResponse() {}
 }

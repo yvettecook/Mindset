@@ -41,7 +41,7 @@ final class HomeView: UIView {
     }
 
     @objc private func newRecord() {
-        SharedServices.navigator.toNewResponse()
+        SharedServices.navigator.toNewRecord()
     }
 }
 
