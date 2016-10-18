@@ -1,7 +1,7 @@
 import Foundation
 
 struct RecordEntry {
-    let responses: [RecordResponse]
+    let steps: [RecordStep]
     let date: Date
     let formID: Identifier
 }
@@ -10,7 +10,7 @@ struct RecordEntry {
 
 extension RecordEntry: Equatable {
     public static func ==(lhs: RecordEntry, rhs: RecordEntry) -> Bool {
-        return lhs.responses == rhs.responses &&
+        return lhs.steps == rhs.steps &&
             lhs.date == rhs.date &&
             lhs.formID == rhs.formID
     }

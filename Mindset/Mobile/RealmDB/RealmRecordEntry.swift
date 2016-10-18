@@ -4,7 +4,7 @@ import RealmSwift
 
 class RealmRecordEntry: Object {
 
-    let responses = List<RealmRecordResponse>()
+    let steps = List<RealmRecordStep>()
     dynamic var date: NSDate = Date.distantFuture as NSDate
     dynamic var formID: String = "unknown"
 
@@ -14,19 +14,19 @@ class RealmRecordEntry: Object {
         self.date = record.date as NSDate
         self.formID = record.formID
 
-        let realmResponses = record.responses.map { RealmRecordResponse(response: $0) }
+        let realmSteps = record.steps.map { RealmRecordStep(step: $0) }
 
-        for i in realmResponses {
-            self.responses.append(i)
+        for i in realmSteps {
+            self.steps.append(i)
         }
     }
 
-    convenience init(responses: List<RealmRecordResponse>, date: NSDate, formID: String) {
+    convenience init(steps: List<RealmRecordStep>, date: NSDate, formID: String) {
         self.init()
         self.date = date
         self.formID = formID
-        for i in responses {
-            self.responses.append(i)
+        for i in steps {
+            self.steps.append(i)
         }
     }
     

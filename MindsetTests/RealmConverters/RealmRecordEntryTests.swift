@@ -20,13 +20,13 @@ class RealmRecordEntryTests: XCTestCase {
         expectedResponses.append(RealmRecordResponse.init(identifier: "textResponse", type: "text", value: "Test response of type: text"))
         expectedResponses.append(RealmRecordResponse.init(identifier: "scaleResponse", type: "scale", value: "Test response of type: scale"))
         
-        XCTAssertEqual(result.responses[0].identifier, expectedResponses[0].identifier)
-        XCTAssertEqual(result.responses[0].type, expectedResponses[0].type)
-        XCTAssertEqual(result.responses[0].value, expectedResponses[0].value)
+        XCTAssertEqual(result.steps[0].responses[0].identifier, expectedResponses[0].identifier)
+        XCTAssertEqual(result.steps[0].responses[0].type, expectedResponses[0].type)
+        XCTAssertEqual(result.steps[0].responses[0].value, expectedResponses[0].value)
 
-        XCTAssertEqual(result.responses[1].identifier, expectedResponses[1].identifier)
-        XCTAssertEqual(result.responses[1].type, expectedResponses[1].type)
-        XCTAssertEqual(result.responses[1].value, expectedResponses[1].value)
+        XCTAssertEqual(result.steps[0].responses[1].identifier, expectedResponses[1].identifier)
+        XCTAssertEqual(result.steps[0].responses[1].type, expectedResponses[1].type)
+        XCTAssertEqual(result.steps[0].responses[1].value, expectedResponses[1].value)
 
 
     }
@@ -37,9 +37,12 @@ extension RecordEntry {
 
     static func example() -> RecordEntry {
         return RecordEntry(
-            responses: [
-                RecordResponse.example(ofType: .text),
-                RecordResponse.example(ofType: .scale)
+            steps: [
+                RecordStep(identifier: "step1", responses: [
+                    RecordResponse.example(ofType: .text),
+                    RecordResponse.example(ofType: .scale)
+                    ]
+                )
             ],
             date: Date.distantPast,
             formID: "TestForm")

@@ -48,10 +48,15 @@
 		1A9729581DB360FE0003A6F4 /* PersistedRecordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9729571DB360FE0003A6F4 /* PersistedRecordService.swift */; };
 		1A97295A1DB3621F0003A6F4 /* LocalRecordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9729591DB3621F0003A6F4 /* LocalRecordService.swift */; };
 		1A97295C1DB366900003A6F4 /* ORKToRecordConverters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A97295B1DB366900003A6F4 /* ORKToRecordConverters.swift */; };
-		1A97295E1DB3D3420003A6F4 /* ORKTaskResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A97295D1DB3D3420003A6F4 /* ORKTaskResultTests.swift */; };
 		1AB8D8901DABAE60003C4EE8 /* RealmRecordEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB8D88F1DABAE60003C4EE8 /* RealmRecordEntry.swift */; };
 		1AB8D8921DABAE82003C4EE8 /* RealmRecordResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB8D8911DABAE82003C4EE8 /* RealmRecordResponse.swift */; };
 		1AB8D8951DABB10D003C4EE8 /* RealmConvertToRecordEntryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB8D8941DABB10D003C4EE8 /* RealmConvertToRecordEntryTests.swift */; };
+		1ADAF44A1DB6B50E00578562 /* RecordStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADAF4491DB6B50E00578562 /* RecordStep.swift */; };
+		1ADAF44C1DB6B9C400578562 /* RealmRecordStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADAF44B1DB6B9C400578562 /* RealmRecordStep.swift */; };
+		1ADAF44E1DB6C2CE00578562 /* ORKQuestionResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADAF44D1DB6C2CE00578562 /* ORKQuestionResultTests.swift */; };
+		1ADAF4501DB6C46700578562 /* ORKConverters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADAF44F1DB6C46700578562 /* ORKConverters.swift */; };
+		1ADAF4521DB6C57000578562 /* ORKStepResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADAF4511DB6C57000578562 /* ORKStepResultTests.swift */; };
+		1ADAF4541DB6CC0900578562 /* ORKTaskResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADAF4531DB6CC0900578562 /* ORKTaskResultTests.swift */; };
 		34E8635FEA3F1BA4891C919F /* Pods_MindsetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6826EAF2163B8AE7838AA650 /* Pods_MindsetTests.framework */; };
 		C70681F80D88FC1E8B70FAA9 /* Pods_Mindset.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5BD14FB242A8A704C4D4A32 /* Pods_Mindset.framework */; };
 /* End PBXBuildFile section */
@@ -111,10 +116,15 @@
 		1A9729571DB360FE0003A6F4 /* PersistedRecordService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistedRecordService.swift; sourceTree = "<group>"; };
 		1A9729591DB3621F0003A6F4 /* LocalRecordService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalRecordService.swift; sourceTree = "<group>"; };
 		1A97295B1DB366900003A6F4 /* ORKToRecordConverters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ORKToRecordConverters.swift; sourceTree = "<group>"; };
-		1A97295D1DB3D3420003A6F4 /* ORKTaskResultTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ORKTaskResultTests.swift; sourceTree = "<group>"; };
 		1AB8D88F1DABAE60003C4EE8 /* RealmRecordEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmRecordEntry.swift; sourceTree = "<group>"; };
 		1AB8D8911DABAE82003C4EE8 /* RealmRecordResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmRecordResponse.swift; sourceTree = "<group>"; };
 		1AB8D8941DABB10D003C4EE8 /* RealmConvertToRecordEntryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmConvertToRecordEntryTests.swift; sourceTree = "<group>"; };
+		1ADAF4491DB6B50E00578562 /* RecordStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecordStep.swift; path = Models/RecordStep.swift; sourceTree = "<group>"; };
+		1ADAF44B1DB6B9C400578562 /* RealmRecordStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmRecordStep.swift; sourceTree = "<group>"; };
+		1ADAF44D1DB6C2CE00578562 /* ORKQuestionResultTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ORKQuestionResultTests.swift; path = ORKConverters/ORKQuestionResultTests.swift; sourceTree = "<group>"; };
+		1ADAF44F1DB6C46700578562 /* ORKConverters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ORKConverters.swift; sourceTree = "<group>"; };
+		1ADAF4511DB6C57000578562 /* ORKStepResultTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ORKStepResultTests.swift; path = ORKConverters/ORKStepResultTests.swift; sourceTree = "<group>"; };
+		1ADAF4531DB6CC0900578562 /* ORKTaskResultTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ORKTaskResultTests.swift; path = ORKConverters/ORKTaskResultTests.swift; sourceTree = "<group>"; };
 		519BFAD084CC7D56668B0243 /* Pods-Mindset.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mindset.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mindset/Pods-Mindset.release.xcconfig"; sourceTree = "<group>"; };
 		6826EAF2163B8AE7838AA650 /* Pods_MindsetTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MindsetTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81DFB4CF1B056CCFE241A2A9 /* Pods-Mindset.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mindset.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mindset/Pods-Mindset.debug.xcconfig"; sourceTree = "<group>"; };
@@ -167,8 +177,7 @@
 		1A1032881DA178BF008963DB /* Record */ = {
 			isa = PBXGroup;
 			children = (
-				1A1032891DA178BF008963DB /* RecordEntry.swift */,
-				1A10328A1DA178BF008963DB /* RecordResponse.swift */,
+				1ADAF4481DB6B4B000578562 /* Models */,
 				1A9110D41DAABB9D004B35F7 /* RecordDatabase.swift */,
 				1A9729551DB360F20003A6F4 /* RecordService.swift */,
 				1A9729571DB360FE0003A6F4 /* PersistedRecordService.swift */,
@@ -185,6 +194,7 @@
 				1A10328F1DA17904008963DB /* ResearchKitFormLayoutGenerator.swift */,
 				1A1032A31DA18149008963DB /* FormToORKConverters.swift */,
 				1A97295B1DB366900003A6F4 /* ORKToRecordConverters.swift */,
+				1ADAF44F1DB6C46700578562 /* ORKConverters.swift */,
 			);
 			path = Form;
 			sourceTree = "<group>";
@@ -223,7 +233,9 @@
 				1A1032A91DA181DB008963DB /* ORKFormItemTests.swift */,
 				1A1032AB1DA19E9E008963DB /* ORKFormStepTests.swift */,
 				1A1032AD1DA387BE008963DB /* ORKFormTaskTests.swift */,
-				1A97295D1DB3D3420003A6F4 /* ORKTaskResultTests.swift */,
+				1ADAF44D1DB6C2CE00578562 /* ORKQuestionResultTests.swift */,
+				1ADAF4511DB6C57000578562 /* ORKStepResultTests.swift */,
+				1ADAF4531DB6CC0900578562 /* ORKTaskResultTests.swift */,
 			);
 			name = ORKConverters;
 			sourceTree = "<group>";
@@ -318,6 +330,7 @@
 				1A9110D61DAABC86004B35F7 /* RealmRecordDatabase.swift */,
 				1A9110D81DAAC013004B35F7 /* RealmRecordConverters.swift */,
 				1AB8D88F1DABAE60003C4EE8 /* RealmRecordEntry.swift */,
+				1ADAF44B1DB6B9C400578562 /* RealmRecordStep.swift */,
 				1AB8D8911DABAE82003C4EE8 /* RealmRecordResponse.swift */,
 			);
 			path = RealmDB;
@@ -331,6 +344,16 @@
 				1A75B5111DAF6118002E453D /* RealmRecordResponseTests.swift */,
 			);
 			path = RealmConverters;
+			sourceTree = "<group>";
+		};
+		1ADAF4481DB6B4B000578562 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1A1032891DA178BF008963DB /* RecordEntry.swift */,
+				1A10328A1DA178BF008963DB /* RecordResponse.swift */,
+				1ADAF4491DB6B50E00578562 /* RecordStep.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		7A7A2F893F7C4E44C5A3B9D0 /* Frameworks */ = {
@@ -561,8 +584,10 @@
 			files = (
 				1A9110D91DAAC013004B35F7 /* RealmRecordConverters.swift in Sources */,
 				1A9729561DB360F20003A6F4 /* RecordService.swift in Sources */,
+				1ADAF44A1DB6B50E00578562 /* RecordStep.swift in Sources */,
 				1A2C22F61D9689D90051E9F6 /* ConvenienceStuff.swift in Sources */,
 				1A1032831DA178A5008963DB /* FormPresenter.swift in Sources */,
+				1ADAF4501DB6C46700578562 /* ORKConverters.swift in Sources */,
 				1A97295C1DB366900003A6F4 /* ORKToRecordConverters.swift in Sources */,
 				1AB8D8901DABAE60003C4EE8 /* RealmRecordEntry.swift in Sources */,
 				1A10328C1DA178BF008963DB /* RecordResponse.swift in Sources */,
@@ -581,6 +606,7 @@
 				1A1032841DA178A5008963DB /* FormService.swift in Sources */,
 				1A1032691DA146E2008963DB /* SharedServices.swift in Sources */,
 				1A10328B1DA178BF008963DB /* RecordEntry.swift in Sources */,
+				1ADAF44C1DB6B9C400578562 /* RealmRecordStep.swift in Sources */,
 				1A1032951DA17904008963DB /* LocalFormService.swift in Sources */,
 				1A9729581DB360FE0003A6F4 /* PersistedRecordService.swift in Sources */,
 				1AB8D8921DABAE82003C4EE8 /* RealmRecordResponse.swift in Sources */,
@@ -598,14 +624,16 @@
 				1AB8D8951DABB10D003C4EE8 /* RealmConvertToRecordEntryTests.swift in Sources */,
 				1A1032AC1DA19E9E008963DB /* ORKFormStepTests.swift in Sources */,
 				1A1032AE1DA387BE008963DB /* ORKFormTaskTests.swift in Sources */,
+				1ADAF4541DB6CC0900578562 /* ORKTaskResultTests.swift in Sources */,
 				1A1032A21DA1792D008963DB /* ThoughtRecordTests.swift in Sources */,
 				1A1032AA1DA181DB008963DB /* ORKFormItemTests.swift in Sources */,
 				1A75B5121DAF6118002E453D /* RealmRecordResponseTests.swift in Sources */,
 				1A1032A11DA1792D008963DB /* StepTests.swift in Sources */,
 				1A1032A01DA1792D008963DB /* ItemTests.swift in Sources */,
 				1A10329F1DA1792D008963DB /* FormTests.swift in Sources */,
-				1A97295E1DB3D3420003A6F4 /* ORKTaskResultTests.swift in Sources */,
+				1ADAF44E1DB6C2CE00578562 /* ORKQuestionResultTests.swift in Sources */,
 				1A75B5101DAF6019002E453D /* RealmRecordEntryTests.swift in Sources */,
+				1ADAF4521DB6C57000578562 /* ORKStepResultTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

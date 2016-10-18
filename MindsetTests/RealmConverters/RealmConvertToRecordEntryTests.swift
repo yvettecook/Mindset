@@ -7,20 +7,33 @@ class RealmConvertToRecordEntryTests: XCTestCase {
     
     func test_convertToRecordEntryFromRealmRecordEntry() {
         let realmRecordEntry = RealmRecordEntry(
-            value: ["responses" : [RealmRecordResponse.example()],
+            value: ["steps" : [RealmRecordStep.example()],
                     "date":  Date.distantPast as NSDate,
                     "formID": "test"])
 
         let result = convertToRecordEntry(from: realmRecordEntry)
 
-        let expectedResult = RecordEntry(
-            responses: [RecordResponse(identifier: "1",
-                                       type: .text,
-                                       value: "value")],
+        let expected = RecordEntry(
+            steps: [RecordStep.example()],
             date: Date.distantPast,
             formID: "test")
 
-        XCTAssertEqual(result, expectedResult)
+        XCTAssertEqual(result, expected)
+    }
+
+    func test_convertToRecordStepFromRealmRecordStep() {
+        let realmRecordStep = RealmRecordStep.example()
+
+        let result = convertToRecordStep(from: realmRecordStep)
+
+        let expected = RecordStep(
+            identifier: "Step1",
+            responses: [
+                RecordResponse.example(ofType: .text)
+            ])
+
+        XCTAssertEqual(result, expected)
+
     }
 
     func test_convertToRecordResponseFromRealmRecordResponse() {
@@ -28,21 +41,41 @@ class RealmConvertToRecordEntryTests: XCTestCase {
 
         let result = try! convertToRecordResponse(from: realmRecordResponse)
 
-        let expectedResult = RecordResponse(identifier: "1", type: .text, value: "value")
+        let expected = RecordResponse.example(ofType: .text)
 
-        XCTAssertEqual(result, expectedResult)
+        XCTAssertEqual(result, expected)
     }
 
 }
 
-extension RealmRecordResponse {
-
-    static func example() -> RealmRecordResponse {
-        return RealmRecordResponse(
-            identifier: "1",
-            type: "text",
-            value: "value"
+extension RecordStep {
+    static func example() -> RecordStep {
+        return RecordStep(
+            identifier: "Step1",
+            responses: [
+                RecordResponse.example(ofType: .text)
+            ]
         )
     }
+}
 
+extension RealmRecordStep {
+    static func example() -> RealmRecordStep {
+        return RealmRecordStep(
+            value: [
+                "responses" : [RealmRecordResponse.example()],
+                "identifier" : "Step1"
+            ]
+        )
+    }
+}
+
+extension RealmRecordResponse {
+    static func example(ofType type: ItemType = .text) -> RealmRecordResponse {
+        return RealmRecordResponse(
+            identifier: "\(type)Response",
+            type: "\(type)",
+            value: "Test response of type: \(type)"
+        )
+    }
 }

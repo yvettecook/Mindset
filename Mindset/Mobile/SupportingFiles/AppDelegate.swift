@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("**********")
         print(realmRecords)
         print("**********")
+        
 
         return true
     }
