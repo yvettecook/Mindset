@@ -5,7 +5,7 @@ import RealmSwift
 
 class RealmRecordEntryTests: XCTestCase {
 
-    /* Realm Objects equatable definition defines objects as
+    /* Realm Object's equatable definition defines objects as
      equatable if they point to the same object in the Realm
      database. Which isn't so good for testing :( */
 
@@ -27,8 +27,6 @@ class RealmRecordEntryTests: XCTestCase {
         XCTAssertEqual(result.steps[0].responses[1].identifier, expectedResponses[1].identifier)
         XCTAssertEqual(result.steps[0].responses[1].type, expectedResponses[1].type)
         XCTAssertEqual(result.steps[0].responses[1].value, expectedResponses[1].value)
-
-
     }
 
 }

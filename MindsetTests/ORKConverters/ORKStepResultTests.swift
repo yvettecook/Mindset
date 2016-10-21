@@ -29,4 +29,12 @@ extension ORKStepResult {
             ]
         )
     }
+
+    static func emptyExample() -> ORKStepResult {
+        return ORKStepResult(stepIdentifier: "step1", results: [
+            ORKScaleQuestionResult.emptyExample(),
+            ORKTextQuestionResult.emptyExample()
+            ]
+        )
+    }
 }

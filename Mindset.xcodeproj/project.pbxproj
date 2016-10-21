@@ -46,8 +46,7 @@
 		1A9110D91DAAC013004B35F7 /* RealmRecordConverters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9110D81DAAC013004B35F7 /* RealmRecordConverters.swift */; };
 		1A9729561DB360F20003A6F4 /* RecordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9729551DB360F20003A6F4 /* RecordService.swift */; };
 		1A9729581DB360FE0003A6F4 /* PersistedRecordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9729571DB360FE0003A6F4 /* PersistedRecordService.swift */; };
-		1A97295A1DB3621F0003A6F4 /* LocalRecordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9729591DB3621F0003A6F4 /* LocalRecordService.swift */; };
-		1A97295C1DB366900003A6F4 /* ORKToRecordConverters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A97295B1DB366900003A6F4 /* ORKToRecordConverters.swift */; };
+		1A97295C1DB366900003A6F4 /* ItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A97295B1DB366900003A6F4 /* ItemType.swift */; };
 		1AB8D8901DABAE60003C4EE8 /* RealmRecordEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB8D88F1DABAE60003C4EE8 /* RealmRecordEntry.swift */; };
 		1AB8D8921DABAE82003C4EE8 /* RealmRecordResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB8D8911DABAE82003C4EE8 /* RealmRecordResponse.swift */; };
 		1AB8D8951DABB10D003C4EE8 /* RealmConvertToRecordEntryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB8D8941DABB10D003C4EE8 /* RealmConvertToRecordEntryTests.swift */; };
@@ -114,8 +113,7 @@
 		1A9110D81DAAC013004B35F7 /* RealmRecordConverters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmRecordConverters.swift; sourceTree = "<group>"; };
 		1A9729551DB360F20003A6F4 /* RecordService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordService.swift; sourceTree = "<group>"; };
 		1A9729571DB360FE0003A6F4 /* PersistedRecordService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistedRecordService.swift; sourceTree = "<group>"; };
-		1A9729591DB3621F0003A6F4 /* LocalRecordService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalRecordService.swift; sourceTree = "<group>"; };
-		1A97295B1DB366900003A6F4 /* ORKToRecordConverters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ORKToRecordConverters.swift; sourceTree = "<group>"; };
+		1A97295B1DB366900003A6F4 /* ItemType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemType.swift; sourceTree = "<group>"; };
 		1AB8D88F1DABAE60003C4EE8 /* RealmRecordEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmRecordEntry.swift; sourceTree = "<group>"; };
 		1AB8D8911DABAE82003C4EE8 /* RealmRecordResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmRecordResponse.swift; sourceTree = "<group>"; };
 		1AB8D8941DABB10D003C4EE8 /* RealmConvertToRecordEntryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmConvertToRecordEntryTests.swift; sourceTree = "<group>"; };
@@ -190,10 +188,9 @@
 			isa = PBXGroup;
 			children = (
 				1A10328E1DA17904008963DB /* LocalFormService.swift */,
-				1A9729591DB3621F0003A6F4 /* LocalRecordService.swift */,
 				1A10328F1DA17904008963DB /* ResearchKitFormLayoutGenerator.swift */,
 				1A1032A31DA18149008963DB /* FormToORKConverters.swift */,
-				1A97295B1DB366900003A6F4 /* ORKToRecordConverters.swift */,
+				1A97295B1DB366900003A6F4 /* ItemType.swift */,
 				1ADAF44F1DB6C46700578562 /* ORKConverters.swift */,
 			);
 			path = Form;
@@ -588,10 +585,9 @@
 				1A2C22F61D9689D90051E9F6 /* ConvenienceStuff.swift in Sources */,
 				1A1032831DA178A5008963DB /* FormPresenter.swift in Sources */,
 				1ADAF4501DB6C46700578562 /* ORKConverters.swift in Sources */,
-				1A97295C1DB366900003A6F4 /* ORKToRecordConverters.swift in Sources */,
+				1A97295C1DB366900003A6F4 /* ItemType.swift in Sources */,
 				1AB8D8901DABAE60003C4EE8 /* RealmRecordEntry.swift in Sources */,
 				1A10328C1DA178BF008963DB /* RecordResponse.swift in Sources */,
-				1A97295A1DB3621F0003A6F4 /* LocalRecordService.swift in Sources */,
 				1A1032871DA178A5008963DB /* Step.swift in Sources */,
 				1A1032991DA17904008963DB /* AppNavigator.swift in Sources */,
 				1A9110D51DAABB9D004B35F7 /* RecordDatabase.swift in Sources */,

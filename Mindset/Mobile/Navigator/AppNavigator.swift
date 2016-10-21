@@ -48,13 +48,16 @@ extension AppNavigator: ORKTaskViewControllerDelegate {
         switch reason {
         case .saved:
             let taskResult = taskViewController.result
-            let record = orkTaskResultToRecord(task: taskResult)
+            let record = convertToRecordEntry(from: taskResult)
             presenter.userDidSave(record: record)
         case .discarded:
             presenter.userDidDiscardRecord()
         case.completed:
             let taskResult = taskViewController.result
-            let record = orkTaskResultToRecord(task: taskResult)
+            print("=====")
+            print(taskResult)
+            print("=====")
+            let record = convertToRecordEntry(from: taskResult)
             presenter.userDidComplete(record: record)
         case .failed:
             presenter.userDidFailedRecord()

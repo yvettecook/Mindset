@@ -28,12 +28,24 @@ extension ORKScaleQuestionResult {
         scale.answer = 4
         return scale
     }
+
+    static func emptyExample() -> ORKScaleQuestionResult {
+        let scale = ORKScaleQuestionResult(identifier: "step1scale")
+        scale.answer = nil
+        return scale
+    }
 }
 
 extension ORKTextQuestionResult {
     static func example() -> ORKTextQuestionResult {
         let text = ORKTextQuestionResult(identifier: "step1text")
         text.answer = "Hello, world"
+        return text
+    }
+
+    static func emptyExample() -> ORKTextQuestionResult {
+        let text = ORKTextQuestionResult(identifier: "step1text")
+        text.answer = nil
         return text
     }
 }

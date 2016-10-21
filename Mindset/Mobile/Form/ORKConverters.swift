@@ -6,11 +6,29 @@ func convertToRecordResponse(from questionResult: ORKQuestionResult) -> RecordRe
 
     let answer: String
 
+    // TODO: Refactor!
+
     switch type {
     case .text:
-        answer = (questionResult as! ORKTextQuestionResult).textAnswer!
+        if let textResult = questionResult as? ORKTextQuestionResult {
+            if let textAnswer = textResult.textAnswer {
+                answer = textAnswer
+            } else {
+                answer = ""
+            }
+        } else {
+            answer = ""
+        }
     case .scale:
-        answer = (questionResult as! ORKScaleQuestionResult).scaleAnswer!.stringValue
+        if let scaleResult = questionResult as? ORKScaleQuestionResult {
+            if let scaleAnswer = scaleResult.scaleAnswer {
+                answer = scaleAnswer.stringValue
+            } else {
+                answer = ""
+            }
+        } else {
+            answer = ""
+        }
     }
 
     return RecordResponse(identifier: identifier, type: type, value: answer)
