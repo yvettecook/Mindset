@@ -34,11 +34,16 @@ func convertToRecordResponse(from questionResult: ORKQuestionResult) -> RecordRe
     return RecordResponse(identifier: identifier, type: type, value: answer)
 }
 
-func convertToRecordStep(from stepResult: ORKStepResult) -> RecordStep {
+func convertToRecordStep(from stepResult: ORKStepResult) -> RecordStep? {
     let identifier = stepResult.identifier
     var responses = [RecordResponse]()
 
-    for result in stepResult.results! {
+    guard
+        let results = stepResult.results,
+        results.count > 1
+        else { return nil }
+
+    for result in results {
         let questionResult = result as! ORKQuestionResult
         let response = convertToRecordResponse(from: questionResult)
         responses.append(response)
@@ -55,8 +60,9 @@ func convertToRecordEntry(from taskResult: ORKTaskResult) -> RecordEntry {
 
     for step in taskResult.results! {
         let stepResult = step as! ORKStepResult
-        let recordStep = convertToRecordStep(from: stepResult)
-        steps.append(recordStep)
+        if let recordStep = convertToRecordStep(from: stepResult) {
+            steps.append(recordStep)
+        }
     }
 
     return RecordEntry(steps: steps, date: date!, formID: identifier)

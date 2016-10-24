@@ -50,4 +50,29 @@ class ORKTaskResultConverterTests: XCTestCase {
         XCTAssertEqual(result, expected)
     }
 
+    func test_IgnoresStepWithNoResults() {
+        let taskResult = ORKTaskResult(identifier: "TestTask")
+        taskResult.results = [
+            ORKStepResult(stepIdentifier: "summaryStep", results: []),
+            ORKStepResult.example(),
+            ORKStepResult(stepIdentifier: "summaryStep", results: [])
+        ]
+        taskResult.endDate = Date.distantPast
+
+        let result = convertToRecordEntry(from: taskResult)
+
+        let expected = RecordEntry(
+            steps: [RecordStep(
+                identifier: "step1",
+                responses: [
+                    RecordResponse(identifier: "step1scale", type: .scale, value: "4"),
+                    RecordResponse(identifier: "step1text", type: .text, value: "Hello, world")
+                ]
+                )],
+            date: Date.distantPast,
+            formID: "TestTask")
+
+        XCTAssertEqual(result, expected)
+    }
+
 }
