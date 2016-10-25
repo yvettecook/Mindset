@@ -35,6 +35,7 @@
 		1A2C22F61D9689D90051E9F6 /* ConvenienceStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2C22F51D9689D90051E9F6 /* ConvenienceStuff.swift */; };
 		1A2C22FA1D969A9E0051E9F6 /* thought-record.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A2C22F91D969A9E0051E9F6 /* thought-record.json */; };
 		1A2C22FB1D969EF80051E9F6 /* thought-record.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A2C22F91D969A9E0051E9F6 /* thought-record.json */; };
+		1A59E1781DBDEF870093BC33 /* todo.md in Sources */ = {isa = PBXBuildFile; fileRef = 1A59E1771DBDEF870093BC33 /* todo.md */; };
 		1A6862031D8DC16E00FC9E3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A6861FD1D8DC16E00FC9E3A /* Assets.xcassets */; };
 		1A6862041D8DC16E00FC9E3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6861FF1D8DC16E00FC9E3A /* AppDelegate.swift */; };
 		1A6862051D8DC16E00FC9E3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A6862001D8DC16E00FC9E3A /* LaunchScreen.storyboard */; };
@@ -50,6 +51,7 @@
 		1AB8D8901DABAE60003C4EE8 /* RealmRecordEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB8D88F1DABAE60003C4EE8 /* RealmRecordEntry.swift */; };
 		1AB8D8921DABAE82003C4EE8 /* RealmRecordResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB8D8911DABAE82003C4EE8 /* RealmRecordResponse.swift */; };
 		1AB8D8951DABB10D003C4EE8 /* RealmConvertToRecordEntryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB8D8941DABB10D003C4EE8 /* RealmConvertToRecordEntryTests.swift */; };
+		1AD0A0061DBF394600C73C00 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD0A0051DBF394600C73C00 /* RecordViewController.swift */; };
 		1ADAF44A1DB6B50E00578562 /* RecordStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADAF4491DB6B50E00578562 /* RecordStep.swift */; };
 		1ADAF44C1DB6B9C400578562 /* RealmRecordStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADAF44B1DB6B9C400578562 /* RealmRecordStep.swift */; };
 		1ADAF44E1DB6C2CE00578562 /* ORKQuestionResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADAF44D1DB6C2CE00578562 /* ORKQuestionResultTests.swift */; };
@@ -99,6 +101,7 @@
 		1A1032AD1DA387BE008963DB /* ORKFormTaskTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ORKFormTaskTests.swift; path = ORKConverters/ORKFormTaskTests.swift; sourceTree = "<group>"; };
 		1A2C22F51D9689D90051E9F6 /* ConvenienceStuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvenienceStuff.swift; sourceTree = "<group>"; };
 		1A2C22F91D969A9E0051E9F6 /* thought-record.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "thought-record.json"; sourceTree = "<group>"; };
+		1A59E1771DBDEF870093BC33 /* todo.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = todo.md; path = Mindset/todo.md; sourceTree = "<group>"; };
 		1A6861D41D8DBFF800FC9E3A /* Mindset.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mindset.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A6861E81D8DBFF800FC9E3A /* MindsetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindsetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A6861EE1D8DBFF800FC9E3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -117,6 +120,7 @@
 		1AB8D88F1DABAE60003C4EE8 /* RealmRecordEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmRecordEntry.swift; sourceTree = "<group>"; };
 		1AB8D8911DABAE82003C4EE8 /* RealmRecordResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmRecordResponse.swift; sourceTree = "<group>"; };
 		1AB8D8941DABB10D003C4EE8 /* RealmConvertToRecordEntryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmConvertToRecordEntryTests.swift; sourceTree = "<group>"; };
+		1AD0A0051DBF394600C73C00 /* RecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecordViewController.swift; path = Task/RecordViewController.swift; sourceTree = "<group>"; };
 		1ADAF4491DB6B50E00578562 /* RecordStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecordStep.swift; path = Models/RecordStep.swift; sourceTree = "<group>"; };
 		1ADAF44B1DB6B9C400578562 /* RealmRecordStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmRecordStep.swift; sourceTree = "<group>"; };
 		1ADAF44D1DB6C2CE00578562 /* ORKQuestionResultTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ORKQuestionResultTests.swift; path = ORKConverters/ORKQuestionResultTests.swift; sourceTree = "<group>"; };
@@ -240,6 +244,7 @@
 		1A6861CB1D8DBFF800FC9E3A = {
 			isa = PBXGroup;
 			children = (
+				1A59E1771DBDEF870093BC33 /* todo.md */,
 				1A6861D61D8DBFF800FC9E3A /* Mindset */,
 				1A6861EB1D8DBFF800FC9E3A /* MindsetTests */,
 				1A6861D51D8DBFF800FC9E3A /* Products */,
@@ -291,6 +296,7 @@
 		1A6861FB1D8DC16E00FC9E3A /* Mobile */ = {
 			isa = PBXGroup;
 			children = (
+				1AD0A0041DBF392E00C73C00 /* Task */,
 				1A9110D31DAAB8CA004B35F7 /* RealmDB */,
 				1A10328D1DA17904008963DB /* Form */,
 				1A1032901DA17904008963DB /* Home */,
@@ -341,6 +347,14 @@
 				1A75B5111DAF6118002E453D /* RealmRecordResponseTests.swift */,
 			);
 			path = RealmConverters;
+			sourceTree = "<group>";
+		};
+		1AD0A0041DBF392E00C73C00 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				1AD0A0051DBF394600C73C00 /* RecordViewController.swift */,
+			);
+			name = Task;
 			sourceTree = "<group>";
 		};
 		1ADAF4481DB6B4B000578562 /* Models */ = {
@@ -599,6 +613,7 @@
 				1A1032861DA178A5008963DB /* Item.swift in Sources */,
 				1A6862041D8DC16E00FC9E3A /* AppDelegate.swift in Sources */,
 				1A1032821DA178A5008963DB /* FormDisplayer.swift in Sources */,
+				1AD0A0061DBF394600C73C00 /* RecordViewController.swift in Sources */,
 				1A1032841DA178A5008963DB /* FormService.swift in Sources */,
 				1A1032691DA146E2008963DB /* SharedServices.swift in Sources */,
 				1A10328B1DA178BF008963DB /* RecordEntry.swift in Sources */,
@@ -607,6 +622,7 @@
 				1A9729581DB360FE0003A6F4 /* PersistedRecordService.swift in Sources */,
 				1AB8D8921DABAE82003C4EE8 /* RealmRecordResponse.swift in Sources */,
 				1A9110D71DAABC86004B35F7 /* RealmRecordDatabase.swift in Sources */,
+				1A59E1781DBDEF870093BC33 /* todo.md in Sources */,
 				1A1032961DA17904008963DB /* ResearchKitFormLayoutGenerator.swift in Sources */,
 				1A1032801DA178A5008963DB /* RecordActionListener.swift in Sources */,
 				1A1032811DA178A5008963DB /* FormDatabase.swift in Sources */,
