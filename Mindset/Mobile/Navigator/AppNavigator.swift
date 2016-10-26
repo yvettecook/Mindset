@@ -11,7 +11,7 @@ final class AppNavigator: NSObject, Navigator {
 
     func toNewRecord() {
         let recordViewController = RecordViewController()
-        navigationController.pushViewController(recordViewController, animated: true)
+        navigationController.pushViewController(recordViewController, animated: false)
     }
 
 

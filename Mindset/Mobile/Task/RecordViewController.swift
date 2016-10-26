@@ -26,6 +26,7 @@ class RecordViewController: UIViewController {
 
     override func viewDidLoad() {
         presenter.startPresenting()
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
 
 }
@@ -66,6 +67,8 @@ extension RecordViewController: ORKTaskViewControllerDelegate {
         }
 
         self.dismiss(animated: true, completion: nil)
+        SharedServices.navigator.navigationController.setNavigationBarHidden(false, animated: false)
+        SharedServices.navigator.navigationController.popViewController(animated: false)
     }
-    
+
 }
